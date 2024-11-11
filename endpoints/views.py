@@ -10,7 +10,7 @@ from endpoints.serlializers import ServiceSerializer
 def EndpointsView(request):
     if request.method == "GET":
         try:
-            endpoints_object = ServiceProvider.objects.filter(id=request.data.get('id'))
+            endpoints_object = ServiceProvider.objects.filter(service_type=request.data.get('service_type'))
             endpoint_data = ServiceSerializer(endpoints_object, many=True)
             return Response({
                 'status': True,
@@ -35,17 +35,6 @@ def EndpointsView(request):
             print(serve_obj)
             for data in serve_obj:
                 print(">>>>>>>>>> ",type(data),data.get("service_Provider"))
-                # serializer = ServiceSerializer(data=data)
-                # if serializer.is_valid():
-                #     sample = serializer.validated_data
-                #     sample['service_type'] = data.get('service_type')
-                #     sample['service_provider'] = data.get('service_provider')
-                #     sample['key'] = data.get('key')
-                #     sample['api1'] = data.get('api1')
-                #     sample['api2'] = data.get('api2')
-                #     sample['status'] = data.get('status')
-                #     serializer.save()
-
                 serve_data = ServiceProvider.objects.filter(pk=data['id'])[0]
                 serve_data.service_type = data.get("service_type")
                 serve_data.service_Provider = data.get("service_Provider")
