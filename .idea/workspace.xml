@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="669aae8d-2fed-4772-8dfc-72167556e2be" name="Changes" comment="basic commit">
+    <list default="true" id="669aae8d-2fed-4772-8dfc-72167556e2be" name="Changes" comment="proper response">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/endpoints/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/endpoints/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/endpoints/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/endpoints/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/endpoints/serlializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/endpoints/serlializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/endpoints/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/endpoints/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -127,7 +131,8 @@
       <workItem from="1731137076137" duration="651000" />
       <workItem from="1731137804792" duration="703000" />
       <workItem from="1731154092649" duration="7275000" />
-      <workItem from="1731175930895" duration="8857000" />
+      <workItem from="1731175930895" duration="9540000" />
+      <workItem from="1731298817126" duration="27100000" />
     </task>
     <task id="LOCAL-00001" summary="basic commit">
       <option name="closed" value="true" />
@@ -137,7 +142,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731223147708</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="proper response">
+      <option name="closed" value="true" />
+      <created>1731238202868</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1731238202868</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +169,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="basic commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="basic commit" />
+    <MESSAGE value="proper response" />
+    <option name="LAST_COMMIT_MESSAGE" value="proper response" />
   </component>
 </project>

@@ -1,8 +1,8 @@
 from django.db import models
 class ServiceProvider(models.Model):
 
-    serviceType = models.IntegerField(primary_key=True,unique=True)
-    ServiceProvider = models.CharField(max_length=100)
+    service_type = models.IntegerField()
+    service_Provider = models.CharField(max_length=100)
     key= models.CharField(max_length=100)
     api1 = models.CharField(max_length=100)
     api2 = models.CharField(max_length=100)
@@ -12,4 +12,6 @@ class ServiceProvider(models.Model):
         db_table = 'service_table'
 
     def __int__(self):
-        return self.serviceType
+        return self.service_type
+
+
